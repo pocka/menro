@@ -1,0 +1,595 @@
+/*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+
+/* Reset box-model and set borders */
+/* ============================================ */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content */
+/* ============================================ */
+
+/**
+ * Prevent vertical alignment issues.
+ */
+
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+
+/**
+ * Reset form fields to make them styleable
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border-radius: 0;
+  text-align: inherit;
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+
+[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
+
+[type="radio"] {
+  -webkit-appearance: radio;
+  appearance: radio;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+button[disabled],
+[type="button"][disabled],
+[type="reset"][disabled],
+[type="submit"][disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove arrow in IE10 & IE11
+ */
+
+select::-ms-expand {
+  display: none;
+}
+
+/**
+ * Remove padding
+ */
+
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+
+[contenteditable] {
+  outline: none;
+}
+
+/* Table */
+/* ============================================ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Misc */
+/* ============================================ */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* josefin-sans-vietnamese-400-normal*/
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(data:font/woff2;base64,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) format('woff2'), url(1b2533b4cecfef49f29d.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* josefin-sans-latin-ext-400-normal*/
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(ed4a6202d3c4e2487aa1.woff2) format('woff2'), url(1b2533b4cecfef49f29d.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* josefin-sans-latin-400-normal*/
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(242f197dc146ab9725c1.woff2) format('woff2'), url(1b2533b4cecfef49f29d.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --colour-bg: #fff;
+  --colour-bg-elevated: #eee;
+  --colour-fg: #333;
+  --colour-fg-secondary: #444;
+  --colour-fg-disabled: #666;
+  --colour-divider: #3333;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --colour-bg: #111;
+    --colour-bg-elevated: #222;
+    --colour-fg: #fff;
+    --colour-fg-secondary: #eee;
+    --colour-fg-disabled: #aaa;
+    --colour-divider: #fff3;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+
+  background-color: var(--colour-bg);
+  color: var(--colour-fg);
+}
+
+.splash {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--colour-bg);
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.23);
+  z-index: 999;
+
+  transition: transform 0.7s ease-in;
+}
+.splash[data-hidden] {
+  transform: translateY(-100%);
+}
+
+.splash-logo {
+  display: block;
+  font-size: 4rem;
+  letter-spacing: -0.12em;
+  font-weight: bold;
+
+  animation: 0.7s 0s ease-in-out alternate infinite splash-logo-fade;
+}
+
+@keyframes splash-logo-fade {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 0.7;
+  }
+}
+
+.splash-note {
+  font-size: 0.9em;
+  margin-top: 2em;
+}
+
