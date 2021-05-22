@@ -34,17 +34,8 @@ module.exports = (env, args) => {
         },
         {
           test: /\.css$/,
-          oneOf: [
-            // Inject styles into <head> at runtime
-            {
-              resourceQuery: /runtime/,
-              use: ["style-loader", "css-loader"],
-            },
-            // Load CSS files as external CSS
-            {
-              use: [MiniCssExtractPlugin.loader, "css-loader"],
-            },
-          ],
+          // Load CSS files as external CSS
+          use: [MiniCssExtractPlugin.loader, "css-loader"],
         },
         // Load webfonts as asset
         {

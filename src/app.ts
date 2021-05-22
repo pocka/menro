@@ -16,7 +16,7 @@
 
 import { Elm } from "./Menro/App.elm";
 
-import "./app.css?runtime";
+import "./app.css";
 
 declare global {
   interface Window {
