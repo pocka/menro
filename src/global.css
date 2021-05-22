@@ -1,0 +1,76 @@
+:root {
+  --colour-bg: #fff;
+  --colour-bg-elevated: #eee;
+  --colour-fg: #333;
+  --colour-fg-secondary: #444;
+  --colour-fg-disabled: #666;
+  --colour-divider: #3333;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --colour-bg: #111;
+    --colour-bg-elevated: #222;
+    --colour-fg: #fff;
+    --colour-fg-secondary: #eee;
+    --colour-fg-disabled: #aaa;
+    --colour-divider: #fff3;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+
+  background-color: var(--colour-bg);
+  color: var(--colour-fg);
+}
+
+.splash {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--colour-bg);
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.23);
+  z-index: 999;
+
+  transition: transform 0.7s ease-in;
+}
+.splash[data-hidden] {
+  transform: translateY(-100%);
+}
+
+.splash-logo {
+  display: block;
+  font-size: 4rem;
+  letter-spacing: -0.12em;
+  font-weight: bold;
+
+  animation: 0.7s 0s ease-in-out alternate infinite splash-logo-fade;
+}
+
+@keyframes splash-logo-fade {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 0.7;
+  }
+}
+
+.splash-note {
+  font-size: 0.9em;
+  margin-top: 2em;
+}

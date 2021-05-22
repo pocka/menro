@@ -1,0 +1,27 @@
+# Do not put environment specific rules here.
+
+# === Common conventions ===
+*.log
+*.tgz
+
+# === Node.js / JS tools ===
+# Yarn2 files (Zero-Installs)
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+# Do not commit npm / yarn 1 files
+node_modules
+package-lock.json
+
+# === Elm ===
+# Artifacts and installed dependencies
+elm-stuff
+
+# === Project specific ===
+# Built files
+/dist
